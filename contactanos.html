@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Contactános</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Contactános</h1>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <ul class="menu">
+	    <li><a href="PaginaWeb.html">Bienvenida</a></li>
+            <li><a href="QuienesSomos.html">Quiénes Somos</a></li>
+            <li><a href="Productos.html">Productos</a></li>
+            <li><a href="contactanos.html">Contáctanos</a></li>
+        </ul>
+    </nav>
+<main>
+        <section id="bienvenida">
+
+    <div class="form-container">
+       
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre del cliente</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="celular">Celular</label>
+                <input type="tel" id="celular" name="celular" pattern="[0-9]{10}" placeholder="Ej: 1234567890" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+            </div>
+            <div class="form-group">
+                <label for="servicio">Tipo de servicio o producto</label>
+                <input type="text" id="servicio" name="servicio" required>
+            </div>
+            <div class="form-group">
+                <label for="cantidad">Cantidad</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="pago">Forma de pago</label>
+                <select id="pago" name="pago" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="tarjeta">Tarjeta</option>
+                    <option value="deposito">Depósito</option>
+                    <option value="oxxo">Pago en Oxxo</option>
+                </select>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="submit">Enviar</button>
+                <button type="reset" class="reset">Borrar</button>
+            </div>
+        </form>
+    </div>
+ </section>
+        <br>
+
+    </main>
+
+</html>
